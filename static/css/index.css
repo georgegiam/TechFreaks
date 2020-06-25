@@ -1,0 +1,72 @@
+#who {
+    background-color: #54494B;
+}
+#second {
+    color: black;
+    background-color: #F1F7ED;
+   
+}
+
+#third {
+    text-align: center;
+    color: black;
+    background-color: #91C7B1;
+    
+}
+
+#fourth {
+    background-color: #B33951;
+    
+    color: white;
+}
+
+#slide {
+    color: black !important;
+}
+
+footer {
+    padding: 15px;
+    color: black;
+    text-align: center;
+    background-color: #E3D081;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;   
+    cursor: pointer;   
+}
+
+#exampleModal{
+    color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+}
+
+#register {
+    color: black;   
+    text-align: center;   
+}
+
+#register_button {
+    width: 100%;
+}
+
+.modal-footer {
+    text-align: center;
+}
+

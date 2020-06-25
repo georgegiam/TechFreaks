@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- for responsivness in mobile view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../static/css/general.css">
+
+    <!-- fav icon -->
+    <link rel="icon" href="../static/images/logo.jpg" type="image/gif" sizes="16x16">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <!-- logo image and title -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../static/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Tech Freaks
+        </a>
+        <!-- menu button for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- unorder list start -->
+            <ul class="navbar-nav mr-auto">
+                <!-- listing type navbar item (Our Team) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="our_team.html">Our Team</a>
+                </li>
+                <!-- listing type navbar item (FAQ) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <!-- listing type navbar item (Blog) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!-- listing type navbar item (Contact Us) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <!-- listing type navbar item (Calculate BMI) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="bmi.html">Calculate BMI</a>
+                </li>
+            </ul> <!-- ul end -->
+        </div> <!-- navbar items end -->
+    </nav> <!-- nav end -->
+
+    <!-- light or dark theme selector -->
+    <div id="theme_div">
+        <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineRadio1">Select Theme:</label>
+        </div>
+        <!-- radio button for light theme -->
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1"><i class="far fa-sun"></i></label>
+        </div>
+        <!-- radio button for dark theme -->
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+                checked="checked">
+            <label class="form-check-label" for="inlineRadio2"><i class="far fa-moon"></i></label>
+        </div>
+    </div>
+
+    <!-- container fluid -->
+    <div class=".container-fluid">
+        <!-- container -->
+        <div class="container">
+            <!-- header -->
+            <div class="py-5 text-center" id="header">
+                <h2>Good News!</h2>
+                <div class="alert alert-success" role="alert">
+                    We have successfully received your message. We will reach you out as soon as possible.
+                </div>
+            </div> <!-- header end -->
+
+        </div> <!-- container end -->
+    </div> <!-- container fluid end -->
+
+    <!-- jQuery script -->
+    <script>
+        // getting the DOM ready
+        $(document).ready(function () {
+            // action when inlineRadio1 radio button is clicked (light theme)
+            $("#inlineRadio1").click(function () {
+                // set body background color white
+                $("body").css({ "background-color": "white" });
+                // set text color black
+                $(".py-5, #theme_div").css({ "color": "black" });
+            });
+            // action when inlineRadio2 radio button is clicked (dark theme)
+            $("#inlineRadio2").click(function () {
+                // set body background color black
+                $("body").css({ "background-color": "#444444" });
+                // set text color white
+                $(".py-5, #theme_div").css({ "color": "white" });
+
+            });
+        });
+    </script> <!-- script end -->
+
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

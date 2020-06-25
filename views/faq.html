@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- for responsivness in mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="../static/css/our_team.css">
+  <link rel="stylesheet" href="../static/css/general.css">
+
+  <!-- fav icon -->
+  <link rel="icon" href="../static/images/logo.jpg" type="image/gif" sizes="16x16">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>FAQ</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <!-- logo image and title -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../static/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tech Freaks
+    </a>
+    <!-- menu button for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- navbar items -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- unorder list start -->
+      <ul class="navbar-nav mr-auto">
+        <!-- listing type navbar item (Our Team) -->
+        <li class="nav-item">
+          <a class="nav-link" href="our_team.html">Our Team</a>
+        </li>
+        <!-- listing type navbar item (FAQ) -->
+        <li class="nav-item">
+          <a class="nav-link active" href="faq.html">FAQ</a>
+        </li>
+        <!-- listing type navbar item (Blog) -->
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <!-- listing type navbar item (Contact Us) -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <!-- listing type navbar item (Calculate BMI) -->
+        <li class="nav-item">
+          <a class="nav-link" href="bmi.html">Calculate BMI</a>
+        </li>
+      </ul> <!-- ul end -->
+    </div> <!-- navbar items end -->
+  </nav> <!-- nav end -->
+
+  <!-- light or dark theme selector -->
+  <div id="theme_div">
+    <div class="form-check form-check-inline">
+      <label class="form-check-label" for="inlineRadio1">Select Theme:</label>
+    </div>
+    <!-- radio button for light theme -->
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1"><i class="far fa-sun"></i></label>
+    </div>
+    <!-- radio button for dark theme -->
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+        checked="checked">
+      <label class="form-check-label" for="inlineRadio2"><i class="far fa-moon"></i></label>
+    </div>
+  </div>
+
+  <!-- container fluid -->
+  <div class=".container-fluid text-center">
+    <div class="container">
+      <!-- header -->
+      <div class="py-5 text-center" id="header">
+        <h2>FAQ</h2>
+        <p class="lead">Lots of people get confused about how our company works and what services do we offer. Below you
+          can find some of the most popular question and answers so you can trust us. </p>
+      </div>
+      <!-- accordion -->
+      <div id="accordion">
+        <!-- question 1 -->
+        <div class="card">
+          <!-- question content -->
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <!-- open answer button -->
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                I can't wait! How do I put it on?
+              </button>
+            </h5>
+          </div> <!-- question content end -->
+          <!-- answer 1 -->
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <!-- answer content -->
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div> <!-- answer content end -->
+          </div> <!-- answer end -->
+        </div>
+      </div> <!-- question 1 end -->
+
+      <!-- question 2 -->
+      <div class="card">
+        <!-- question content -->
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <!-- open answer button -->
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              How long does it last?
+            </button>
+          </h5>
+        </div> <!-- question content end -->
+        <!-- answer 2 -->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <!-- answer content -->
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div> <!-- answer content end -->
+        </div> <!-- answer end -->
+      </div> <!-- question 2 end -->
+
+      <!-- question 3 -->
+      <div class="card">
+        <!-- question content -->
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <!-- open answer button -->
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Ok, I love it but do I delete my subscription?
+            </button>
+          </h5>
+        </div> <!-- question content end -->
+        <!-- answer 3 -->
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <!-- answer content -->
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div> <!-- answer content end -->
+        </div> <!-- answer end -->
+      </div> <!-- question 3 end -->
+
+      <!-- question 4 -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              Is it safe?
+            </button>
+          </h5>
+        </div>
+        <!-- answer 4 -->
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <!-- question 5 -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+              aria-expanded="false" aria-controls="collapseFive">
+              Where do all of these awesome designs come from?
+            </button>
+          </h5>
+        </div>
+        <!-- answer 5 -->
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <!-- question 6 -->
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+              aria-expanded="false" aria-controls="collapseSix">
+              I have a great idea! Can I send it to you?
+            </button>
+          </h5>
+        </div>
+        <!-- answer 6 -->
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+            moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div> <!-- answer 6 end -->
+      </div> <!-- question 6 end -->
+    </div> <!-- container end -->
+  </div> <!-- container fluid end -->
+
+
+  <!-- jQuery script -->
+  <script>
+    // getting the DOM ready
+    $(document).ready(function () {
+      // action when inlineRadio1 radio button is clicked (light theme)
+      $("#inlineRadio1").click(function () {
+        // set body background color white
+        $("body").css({ "background-color": "white" });
+        // set text color black
+        $(".row, #header, #theme_div").css({ "color": "black" });
+      });
+      // action when inlineRadio2 radio button is clicked (dark theme)
+      $("#inlineRadio2").click(function () {
+        // set body background color black
+        $("body").css({ "background-color": "#444444" });
+        // set text color white
+        $(".row, #header, #theme_div").css({ "color": "white" });
+      });
+    });
+  </script> <!-- script end -->
+
+  <!-- Bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

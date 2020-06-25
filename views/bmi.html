@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- for responsivness in mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="../static/css/our_team.css">
+  <link rel="stylesheet" href="../static/css/general.css">
+
+  <!-- fav icon -->
+  <link rel="icon" href="../static/images/logo.jpg" type="image/gif" sizes="16x16">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <!-- logo image and title -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../static/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tech Freaks
+    </a>
+    <!-- menu button for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- navbar items -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- unorder list start -->
+      <ul class="navbar-nav mr-auto">
+        <!-- listing type navbar item (Our Team) -->
+        <li class="nav-item">
+          <a class="nav-link" href="our_team.html">Our Team</a>
+        </li>
+        <!-- listing type navbar item (FAQ) -->
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <!-- listing type navbar item (Blog) -->
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <!-- listing type navbar item (Contact Us) -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <!-- listing type navbar item (Calculate BMI) -->
+        <li class="nav-item">
+          <a class="nav-link active" href="bmi.html">Calculate BMI</a>
+        </li>
+      </ul> <!-- ul end -->
+    </div> <!-- navbar items end -->
+  </nav> <!-- nav end -->
+
+  <!-- light or dark theme selector -->
+  <div id="theme_div">
+    <div class="form-check form-check-inline">
+      <label class="form-check-label" for="inlineRadio1">Select Theme:</label>
+    </div>
+    <!-- radio button for light theme -->
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1"><i class="far fa-sun"></i></label>
+    </div>
+    <!-- radio button for dark theme -->
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+        checked="checked">
+      <label class="form-check-label" for="inlineRadio2"><i class="far fa-moon"></i></label>
+    </div>
+  </div>
+
+  <!-- container fluid -->
+  <div class=".container-fluid" id="first">
+    <!-- container -->
+    <div class="container">
+      <!-- header -->
+      <div class="py-5 text-center" id="header">
+        <h2>Calculate BMI</h2>
+        <p class="lead">In this page you can calculate your BMI. We provide an efficient algorithm so you can get the
+          best results. Complete the following form with your real information so you can get real results. We will
+          never use your information.</p>
+      </div> <!-- header end -->
+
+      <!-- 2 columns row -->
+      <div class="row text-white">
+        <!-- right column -->
+        <div class="col-md-6 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span>Results Table</span>
+          </h4>
+          <!-- table with metrics -->
+          <table class="table">
+            <thead class="thead-dark">
+              <!-- table row (headings) -->
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Male</th>
+                <th scope="col">Female</th>
+              </tr> <!-- table row (headings) end -->
+            </thead> <!-- table head end -->
+            <!-- table body -->
+            <tbody>
+              <!-- 1st table row -->
+              <tr>
+                <th scope="row">Underweight</th>
+                <td>
+                  < 19,5</td>
+                <td>
+                  < 18,5</td>
+              </tr>
+              <!-- 2nd table row -->
+              <tr>
+                <th scope="row">Normal weight</th>
+                <td>19.5 - 24.9</td>
+                <td>18.5 - 23.5</td>
+              </tr>
+              <!-- 3rd table row -->
+              <tr>
+                <th scope="row">1st level obesity</th>
+                <td>25 - 29.9</td>
+                <td>23.6 - 28.6</td>
+              </tr>
+              <!-- 4th table row -->
+              <tr>
+                <th scope="row">2nd level obesity</th>
+                <td>30 - 40</td>
+                <td>28.7 - 40</td>
+              </tr>
+              <!-- 5th table row -->
+              <tr>
+                <th scope="row">3rd level obesity</th>
+                <td>> 40</td>
+                <td>> 40</td>
+              </tr>
+            </tbody> <!-- table body end -->
+          </table> <!-- table end -->
+        </div> <!-- right column end -->
+
+        <!-- left column -->
+        <div class="col-md-6 order-md-1" id="form_info">
+          <h4 class="mb-3">Add your information</h4>
+          <!-- user data form -->
+          <form action="">
+            <!-- gender -->
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select your gender</label>
+              <!-- select input for gender -->
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+            <!-- weight and height -->
+            <div class="form-row">
+              <!-- weight -->
+              <div class="form-group col-md-6">
+                <label for="exampleFormControlInput1">Weight (kg)</label>
+                <input type="number" class="form-control" id="weight_input" min="0" placeholder="ex. 80">
+              </div>
+              <!-- height -->
+              <div class="form-group col-md-6">
+                <label for="exampleFormControlInput1">Height (cm)</label>
+                <input type="number" class="form-control" id="height_input" min="0" placeholder="ex. 185">
+              </div>
+            </div>
+            <!-- submit -->
+            <button type="button" id="btn_submit" class="btn btn-primary" style="width: 100%;">Calculate</button>
+          </form> <!-- form end -->
+          <!-- results div -->
+          <div class="py-5 text-center">
+            <h2>Your results</h2>
+            <p class="lead">Based on the "Results Table" this is your BMI result.</p>
+            <h4 id="result_heading"></h4>
+          </div>
+        </div> <!-- left column end -->
+      </div> <!-- row end -->
+    </div> <!-- container end -->
+  </div> <!-- container fluid end -->
+
+  <!-- jQuery script -->
+  <script>
+    // defining variables
+    // w: weight
+    // h: height
+    // gender: gender
+    // result: results
+    var w, h, gender, result;
+
+    // getting the DOM ready
+    $(document).ready(function () {
+      // action when btn_submit is clicked
+      $("#btn_submit").click(function () {
+        // getting weight_input value from the form
+        w = $("#weight_input").val();
+        // getting height_input value from the form
+        h = $("#height_input").val();
+
+        // check if weight or height are empty
+        if (w == "" || h == "")
+          // if they are empty print message in order to fill them
+          $("#result_heading").text("Please fill in all the appropriate fields to get your results.");
+        // if they are not empty
+        else {
+          // parse weight value to integer
+          w = parseInt($("#weight_input").val());
+          // parse height value to integer
+          h = parseInt($("#height_input").val());
+          // getting gender value from the form
+          gender = $("select").val();
+          // calculate the BMI result based on the given equation
+          result = (w / (h / 100 * h / 100)).toFixed(2);
+        }
+
+        // case of gender is male
+        if (gender == "Male") {
+          // case of result < 19.5
+          if (result < 19.5)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are underweight.");
+          // case of result between 19.5 and 24.9
+          else if (result >= 19.5 && result <= 24.9)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " Your weight is normal.");
+          // case of result between 25 and 29.9
+          else if (result >= 25 && result <= 29.9)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are in the 1st level of obesity.");
+          // case of result between 30 and 40
+          else if (result >= 30 && result <= 40)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are in the 2nd level of obesity.");
+          // case of result > 40
+          else if (result > 40)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are in the 3rd level of obesity.");
+        }
+
+        // case of gender is female
+        if (gender == "Female") {
+          // case of result < 18.5
+          if (result < 18.5)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are underweight.");
+          // case of result between 18.5 and 23.5
+          else if (result >= 18.5 && result <= 23.5)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " Your weight is normal.");
+          // case of result between 23.6 and 28.6
+          else if (result >= 23.6 && result <= 28.6)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are in the 1st level of obesity.");
+          // case of result between 28.7 and 40
+          else if (result >= 28.7 && result <= 40)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are in the 2nd level of obesity.");
+          // case of result > 40
+          else if (result > 40)
+            // print the text in the result_heading div
+            $("#result_heading").text("Your BMI is " + result + "." + " You are in the 3rd level of obesity.");
+        }
+      });
+
+      // action when inlineRadio1 radio button is clicked (light theme)
+      $("#inlineRadio1").click(function () {
+        // set body background color white
+        $("body").css({ "background-color": "white" });
+        // set text color black
+        $(".col-md-6, .py-5, #theme_div").css({ "color": "black" });
+      });
+      // action when inlineRadio2 radio button is clicked (dark theme)
+      $("#inlineRadio2").click(function () {
+        // set body background color black
+        $("body").css({ "background-color": "#444444" });
+        // set text color white
+        $(".col-md-6, .py-5, #theme_div").css({ "color": "white" });
+      });
+    });
+  </script> <!-- script end -->
+
+  <!-- Bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

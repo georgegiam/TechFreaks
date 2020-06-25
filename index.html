@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- for responsivness in mobile view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/general.css">
+
+    <!-- fav icon -->
+    <link rel="icon" href="static/images/logo.jpg" type="image/gif" sizes="16x16">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/cac242dd1d.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <!-- logo image and title -->
+        <a class="navbar-brand" href="index.html">
+            <img src="static/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Tech Freaks
+        </a>
+        <!-- menu button for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- unorder list start -->
+            <ul class="navbar-nav mr-auto">
+                <!-- listing type navbar item (Our Team) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="views/our_team.html">Our Team</a>
+                </li>
+                <!-- listing type navbar item (FAQ) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="views/faq.html">FAQ</a>
+                </li>
+                <!-- listing type navbar item (Blog) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="views/blog.html">Blog</a>
+                </li>
+                <!-- listing type navbar item (Contact Us) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="views/contact.html">Contact Us</a>
+                </li>
+                <!-- listing type navbar item (Calculate BMI) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./views/bmi.html">Calculate BMI</a>
+                </li>
+            </ul>
+            <!-- unorder list end -->
+            <!-- unorder list start (for the register button) -->
+            <ul class="navbar-nav d-flex flex-row-reverse">
+                <!-- listing type navbar item -->
+                <li class="nav-item">
+                    <!-- register button -->
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#register">
+                        Register
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="register" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <!-- modal dialog -->
+                        <div class="modal-dialog" role="document">
+                            <!-- modal content -->
+                            <div class="modal-content">
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                                    <!-- modal close button -->
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <!-- register form -->
+                                    <form method="POST">
+                                        <!-- username -->
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="username" placeholder="Username"
+                                                name="username" required>
+                                        </div>
+                                        <!-- name -->
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fullname"
+                                                placeholder="Full Name" name="fullName" required>
+                                        </div>
+                                        <!-- email -->
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email"
+                                                name="email" required>
+                                        </div>
+                                        <!-- password -->
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="pass" placeholder="Password"
+                                                name="password" required>
+                                        </div>
+                                        <!-- submit -->
+                                        <button type="submit" id="subscribe" class="btn btn-primary">Register</button>
+                                    </form>
+                                    <!-- form end -->
+                                </div>
+                                <!-- modal footer -->
+                                <div class=" modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div> <!-- modal content end -->
+                        </div> <!-- modal dialog end -->
+                    </div> <!-- modal end -->
+                </li>
+            </ul> <!-- ul end -->
+        </div> <!-- navbar items end -->
+    </nav> <!-- navbar end -->
+
+    <!-- 1st section -->
+    <!-- container-fluid -->
+    <div class=".container-fluid text-center">
+        <!-- carousel -->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- ordered list -->
+            <ol class="carousel-indicators">
+                <!-- carousel slides -->
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            </ol>
+            <!-- carousel items -->
+            <div class="carousel-inner" role="listbox">
+                <!-- item 1 -->
+                <div class="carousel-item active">
+                    <!-- content of slide -->
+                    <div class="view">
+                        <!-- image -->
+                        <img class="d-block w-100" src="./static/images/1.jpg" alt="First slide">
+                    </div>
+                </div> <!-- item 1 end -->
+                <!-- item 2 -->
+                <div class="carousel-item">
+                    <!-- content of slide -->
+                    <div class="view">
+                        <!-- image -->
+                        <img class="d-block w-100" src="./static/images/2.jpeg" alt="Second slide">
+                    </div>
+                </div> <!-- item 2 end -->
+                <!-- item 3 -->
+                <div class="carousel-item">
+                    <!-- content of slide -->
+                    <div class="view">
+                        <!-- image -->
+                        <img class="d-block w-100" src="./static/images/3.jpeg" alt="Third slide">
+                    </div>
+                </div> <!-- item 3 end -->
+            </div> <!-- carousel items end -->
+
+            <!-- previous button for carousel -->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <!-- next button for carousel -->
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><br>
+
+        <!-- container -->
+        <div class="container">
+            <!-- header text -->
+            <h2 class="font-weight-light" style="padding: 50px;">Who we are?</h2>
+            <!-- card deck -->
+            <div class="card-deck">
+                <!-- card 1 -->
+                <div class="card border-info mb-3" style="max-width: auto;">
+                    <!-- card content -->
+                    <div class="card-body text-info">
+                        <h5 class="card-title"><i class="fas fa-users"></i></h5>
+                        <hr>
+                        <p class="card-text">Welcome to tech freaks, your number one source for all things nutrition
+                            information
+                            inforamtion.</p>
+                    </div> <!-- card content end -->
+                </div> <!-- card 1 end -->
+
+                <!-- card 2 -->
+                <div class="card border-success mb-3" style="max-width: auto;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title"><i class="fas fa-award"></i></h5>
+                        <hr>
+                        <p class="card-text">We ofer all kinds of nutrition services in the lowest price. Contact us to
+                            learn more.</p>
+                    </div> <!-- card content end -->
+                </div> <!-- card 2 end -->
+
+                <!-- card 3 -->
+                <div class="card border-danger mb-3" style="max-width: auto;">
+                    <div class="card-body text-danger">
+                        <h5 class="card-title"><i class="fas fa-check-double"></i></h5>
+                        <hr>
+                        <p class="card-text">We assure all our costumers that metrics are stable and without losses.</p>
+                    </div> <!-- card content end -->
+                </div> <!-- card 3 end -->
+            </div> <!-- card deck end -->
+        </div> <!-- container end -->
+    </div> <!-- container fluid end -->
+
+    <!-- 2nd section -->
+    <!-- container-fluid -->
+    <div class=".container-fluid text-center" id="second">
+        <!-- container -->
+        <div class="container">
+            <!-- header text -->
+            <h2 class="font-weight-light" style="padding: 50px;">About Us</h2>
+            <p class="font-weight-light">Founded in 2020 by George Giamouridis, tech freaks has come a long way from its
+                beginnings in
+                Greece. When George Giamouridis first started out, his passion for
+                nutrition and physique drove him to do tons of research so that tech freaks can offer you a completely
+                nutrition information platform. We now serve customers all over the world, and are thrilled that we're
+                able to turn our passion into our own
+                website.
+            </p>
+            <!-- 2 column row -->
+            <div class="row">
+                <!-- left column -->
+                <div class="col-sm-6">
+                    <!-- column content -->
+                    <div class="container" id="video">
+                        <!-- video div -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <!-- video -->
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/ZHi_A6tC40Y"></iframe>
+                        </div> <!-- video div end -->
+                    </div><br> <!-- column content end -->
+                </div> <!-- left column end -->
+
+                <!-- right column -->
+                <div class="col-sm-6">
+                    <!-- text header -->
+                    <h3 class="font-weight-light">Our Team</h3>
+                    <!-- team image -->
+                    <a href="./views/our_team.html">
+                        <img src="static/images/team.png" width="90%">
+                    </a>
+
+                    <p>
+                        <i>Click the image to learn more about our profesional team.</i>
+                    </p>
+                </div> <!-- right column end -->
+            </div><br> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- container fluid end -->
+
+    <!-- 3rd section -->
+    <!-- container fluid -->
+    <div class=".container-fluid text-center" id="third">
+        <!-- header text -->
+        <h2 class="font-weight-light" style="padding: 50px;">Our Client Side</h2>
+        <!-- container -->
+        <div class="container">
+            <div class="wrapper-carousel-fix">
+                <!-- Carousel Wrapper -->
+                <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
+                    data-ride="carousel" data-interval="false">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                                        class="rounded-circle img-fluid" alt="First sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p>
+                                    <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quod
+                                    eos
+                                    id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore
+                                    laboriosam labore
+                                    sit, aspernatur praesentium iste impedit quidem dolor veniam.
+                                </p>
+                                <h4 class="font-weight-bold">Anna Deynah</h4>
+                                <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                            </div>
+                        </div>
+                        <!--First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                                        class="rounded-circle img-fluid" alt="Second sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p>
+                                    <i class="fas fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut
+                                    odit
+                                    aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt. Neque
+                                    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                    velit, sed quia
+                                    non numquam eius modi tempora incidunt ut labore. </p>
+                                <h4 class="font-weight-bold">Maria Kate</h4>
+                                <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                            </div>
+                        </div>
+                        <!--Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
+                                        class="rounded-circle img-fluid" alt="Third sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p>
+                                    <i class="fas fa-quote-left"></i> Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                    omnis iste natus
+                                    error sit voluptatem accusantium doloremque laudantium.</p>
+                                <h4 class="font-weight-bold">John Doe</h4>
+                                <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                            </div>
+                        </div>
+                        <!--Third slide-->
+                    </div>
+                    <!--Slides-->
+                    <!--Controls-->
+                    <!-- carousel previous button -->
+                    <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <!-- carousel next button -->
+                    <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--Controls-->
+                </div>
+                <!-- Carousel Wrapper -->
+            </div>
+        </div><br> <!-- container end -->
+    </div> <!-- container fluid end -->
+
+    <!-- 4th section -->
+    <!-- container fluid -->
+    <div class=".container-fluid text-center" id="fourth">
+        <!-- container -->
+        <div class="container">
+            <!-- header text -->
+            <h2 class="font-weight-light" style="padding: 50px;">Contact</h2>
+            <!-- 2 column row -->
+            <div class="row">
+                <!-- left column -->
+                <div class="col-sm-6">
+                    <!-- map image div (container) -->
+                    <div class="container">
+                        <!-- image -->
+                        <iframe class="map rounded"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.525339924725!2d23.650679415596127!3d37.941517910320876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bbe5bb8515a1%3A0x3e0dce8e58812705!2sUniversity%20of%20Piraeus!5e0!3m2!1sen!2sgr!4v1590614982327!5m2!1sen!2sgr"
+                            width="100%" height="320cm" frameborder="0" allowfullscreen=""></iframe>
+                    </div><br> <!-- map image div (container) end -->
+                </div>
+
+                <!-- right column -->
+                <div class="col-sm-6">
+                    <!-- header text -->
+                    <h3 class="font-weight-light">Where to find us</h3>
+                    <p>Karaoli ke Dimitriou 80</p>
+                    <p>Piraeus</p>
+                    <p>18534 </p>
+                    <p>Athens, Greece</p>
+                    <p>(+30) 210 4142000</p>
+                    <p>publ@unipi.com</p>
+                    <!-- contact modal button -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Contact Form
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <!-- modal dialog -->
+                        <div class="modal-dialog" role="document">
+                            <!-- modal content -->
+                            <div class="modal-content">
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <!-- header text -->
+                                    <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+                                    <!-- header close button -->
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> <!-- modal header end -->
+                                <!-- modal body -->
+                                <div class="modal-body text-left">
+                                    <!-- contact form inside modal -->
+                                    <form method="POST">
+                                        <!-- name -->
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                placeholder="Full Name" required>
+                                        </div>
+                                        <!-- email -->
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="cemail" name="email"
+                                                placeholder="Email" required>
+                                        </div>
+                                        <!-- subject -->
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" name="subject"
+                                                placeholder="Subject" required>
+                                        </div>
+                                        <!-- message -->
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="message" rows="3" name="message"
+                                                placeholder="Message" required></textarea>
+                                        </div>
+                                        <!-- submit -->
+                                        <button type="submit" id="contact-submit" class="btn btn-primary">Send</button>
+                                    </form> <!-- form end -->
+                                </div> <!-- modal body end -->
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div> <!-- modal content end -->
+                        </div> <!-- modal dialog end -->
+                    </div> <!-- modal end -->
+                </div> <!-- right column end -->
+            </div><br> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- container fluid end -->
+
+    <!-- footer -->
+    <footer>
+        <!-- container fluid -->
+        <div class=".container-fluid text-center">
+            <!-- container -->
+            <div class="container">
+                <small>&copy; Copyright 2020, Tech Freaks</small><br>
+                <small><a href="./views/admin.php">Go to admin panel</a></small>
+            </div> <!-- container end -->
+        </div> <!-- container fluid end -->
+    </footer> <!-- footer end -->
+
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+    <!-- register/contact ajax query -->
+    <script>
+        // getting the DOM ready
+        $(document).ready(function () {
+
+            // action when subscribe button clicked
+            $("#subscribe").click(function (e) {
+
+                e.preventDefault();
+
+                // getting variables value with jquery
+                var username = $("#username").val();
+                var name = $("#fullname").val();
+                var email = $("#email").val();
+                var password = $("#pass").val();
+
+                // checks if all the fields are completed
+                if (username != "" && name != "" && email != "" && password != "") {
+                    $.ajax({
+                        type: "post",
+                        // action to php page
+                        url: "./php/register.php",
+                        // data which will be used
+                        data: { username: username, name: name, email: email, password: password }, // type of request (POST)
+                        success: function (res) {
+                            window.location.href = './views/register_success.html';
+                        },
+                        // function after failure request
+                        failure: function (res) {
+                            console.log(res);
+                        }
+                    });
+                }
+            });
+
+            // action when contact-submit button clicked
+            $("#contact-submit").click(function (e1) {
+
+                e1.preventDefault();
+
+                // getting variables value with jquery
+                var name = $("#name").val();
+                var email = $("#cemail").val();
+                var subject = $("#subject").val();
+                var message = $("#message").val();
+
+                // checks if all the fields are completed
+                if (name != "" && email != "" && subject != "" && message != "") {
+                    // ajax POST request
+                    $.ajax({
+                        // type of request (POST)
+                        type: "post",
+                        // action to php page
+                        url: "./php/contact.php",
+                        // data which will be used
+                        data: { name: name, email: email, subject: subject, message: message },
+                        success: function (res) {
+                            window.location.href = './views/contact_success.html';
+                        },
+                        // function after failure request
+                        failure: function (res) {
+                            console.log(res);
+                        }
+                    }); // ajax end
+                } // if end
+            }); // action when contact-submit button clicked end
+        }); // dom end
+    </script> <!-- script end -->
+</body>
+
+</html>
