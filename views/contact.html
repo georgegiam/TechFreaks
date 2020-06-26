@@ -171,6 +171,20 @@
         var subject = $("#subject").val();
         var message = $("#message").val();
 
+        // setting red border if the user hasn't provide data
+        if (name == "") {
+          $("#name").css("border", "2px solid red");
+        }
+        else if (email == "") {
+          $("#email").css("border", "2px solid red");
+        }
+        else if (subject == "") {
+          $("#subject").css("border", "2px solid red");
+        }
+        else if (message == "") {
+          $("#message").css("border", "2px solid red");
+        }
+
         // checks if all inputs are field
         if (name != "" && email != "" && subject != "" && message != "") {
           // ajax request
