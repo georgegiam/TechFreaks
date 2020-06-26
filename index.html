@@ -480,6 +480,21 @@
                 var email = $("#email").val();
                 var password = $("#pass").val();
 
+
+                // setting red border if the user hasn't provide data
+                if (username == "") {
+                    $("#username").css("border", "2px solid red");
+                }
+                else if (name == "") {
+                    $("#fullname").css("border", "2px solid red");
+                }
+                else if (email == "") {
+                    $("#email").css("border", "2px solid red");
+                }
+                else if (password == "") {
+                    $("#pass").css("border", "2px solid red");
+                }
+
                 // checks if all the fields are completed
                 if (username != "" && name != "" && email != "" && password != "") {
                     $.ajax({
@@ -509,6 +524,20 @@
                 var email = $("#cemail").val();
                 var subject = $("#subject").val();
                 var message = $("#message").val();
+
+                // setting red border if the user hasn't provide data
+                if (name == "") {
+                    $("#name").css("border", "2px solid red");
+                }
+                else if (email == "") {
+                    $("#cemail").css("border", "2px solid red");
+                }
+                else if (subject == "") {
+                    $("#subject").css("border", "2px solid red");
+                }
+                else if (message == "") {
+                    $("#message").css("border", "2px solid red");
+                }
 
                 // checks if all the fields are completed
                 if (name != "" && email != "" && subject != "" && message != "") {
