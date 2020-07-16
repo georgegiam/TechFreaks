@@ -16,7 +16,7 @@ It is also suitable for learning how to use and react with databases as the app 
 
 ## Databse
 
-To set your database follow the url http://localhost:8080/phpmyadmin/ and create your database
+To set your database follow the url http://localhost:8080/phpmyadmin/ and create your database.
 
 **IMPORTANT NOTE:** The name of the database should be **diet**. The first table should be called  **users** and the second one **messages**.
 
