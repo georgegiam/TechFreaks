@@ -7,7 +7,7 @@
 This project aims to provide basic knowledge and techniques of Web programming by Bootstrap, jQuery and AJAX.
 It is also suitable for learning how to use and react with databases as the app is connected with a database in order to store and retrieve data.
 
-# Installation and usage
+# Installation & Usage
 
 ## App
 1. Download XAMPP (https://www.apachefriends.org/download.html) and run it 
