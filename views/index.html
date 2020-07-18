@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="modal-body text-left">
                                     <!-- register form -->
-                                    <form method="POST">
+                                    <form action="index.php" method="POST">
                                         <!-- username -->
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="username" placeholder="Username"
@@ -112,7 +112,7 @@
                                                 name="password" required>
                                         </div>
                                         <!-- submit -->
-                                        <button type="submit" id="subscribe" class="btn btn-primary">Register</button>
+                                        <button type="button" id="subscribe" class="btn btn-primary">Register</button>
                                     </form>
                                     <!-- form end -->
                                 </div>
@@ -407,7 +407,7 @@
                                 <!-- modal body -->
                                 <div class="modal-body text-left">
                                     <!-- contact form inside modal -->
-                                    <form method="POST">
+                                    <form action="index.php" method="POST">
                                         <!-- name -->
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="name" name="name"
@@ -500,7 +500,7 @@
                     $.ajax({
                         type: "post",
                         // action to php page
-                        url: "./php/register.php",
+                        url: "index.php?action=register",
                         // data which will be used
                         data: { username: username, name: name, email: email, password: password }, // type of request (POST)
                         success: function (res) {
@@ -546,7 +546,7 @@
                         // type of request (POST)
                         type: "post",
                         // action to php page
-                        url: "./php/contact.php",
+                        url: "index.php?action=contact",
                         // data which will be used
                         data: { name: name, email: email, subject: subject, message: message },
                         success: function (res) {
