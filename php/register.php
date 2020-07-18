@@ -1,7 +1,7 @@
 <?php 
     
     // connecting with the database
-    $conn = new mysqli('localhost', 'root', '', 'diet'); 
+    $conn = new mysqli($CONFIG['DB_SERV'], $CONFIG['DB_USER'], $CONFIG['DB_PASS'], $CONFIG['DB_NAME']);
     
     // setting variables
     $username = $_POST['username'];        
